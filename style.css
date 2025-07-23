@@ -30,6 +30,7 @@ body{
                                  | sign up |
                                  +---------+
 */
+/*------------------***************nav links and logo****------------*/
 .main-div{
     background-color: rgba(255,255,255,0.85);
     width: 100%;
@@ -93,35 +94,13 @@ height: 80px;
 display: block;
 position: absolute;
 top: 21px;
+z-index: 500;
 }
 .help-feedback a{
     text-decoration: none;
     color: aliceblue;
     font-family: monospace;
     margin-left: 5px;
-}
-.hero-section{
-    position: relative;
-    width: 100%;
-    height: 400px;
-    overflow: hidden;
-}
-.hero-text{
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 90%;
-    background: linear-gradient(to right, rgba(58, 4, 49, 0.8), rgba(137, 15, 137, 0.7), rgba(255,255,255, 0.4), transparent 100%);
-    height: 379px;
-}
-.hero-text p{
-    color: #f5f5f5;
-    font-family: monospace;
-    font-weight: 700;
-    font-size: xx-large;
-    padding-left: 30px;
-    padding-top: 80px;
-    line-height: 60px;
 }
 .logo{
     background-image: url("image/logos.svg");
@@ -133,3 +112,82 @@ top: 21px;
     margin: auto;
     margin-right: 150px;
 }
+/*---------------------*****end of nav****--------------*/
+
+/*--------------------*****hero section------------------*/
+.hero-section img{
+    width: 100%;
+    object-fit: cover;
+}
+.hero-section{
+    position: relative;
+    width: 100%;
+    height: 598px;
+    overflow: hidden;
+    background-color: black;
+}
+.hero-text{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 90%;
+    background: linear-gradient(to right, rgba(58, 4, 49, 0.8), rgba(137, 15, 137, 0.7), rgba(255,255,255, 0.4), transparent 100%);
+    height: 598px;
+}
+.hero-logo{
+    opacity: 15%;
+    background-image: url(image/skillseekerhub-plainlogotania.svg);
+    background-size: 900px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 7px;
+    left: 40%;
+    border: px solid red;
+}
+.hero-text p{
+    color: #f5f5f5;
+    font-weight: 400;
+    font-size: xxx-large;
+    position: absolute;
+    top: 11%;
+    left: 2%;
+    line-height: 1.2em;
+    letter-spacing: 2px;
+}
+.hero-text .hero-para{
+    font-size: small;
+    line-height: normal;
+    position: absolute;
+    top: 50%;
+    left: 13px;
+    width: 50%;
+    line-height: 30px;
+    letter-spacing: 0.01em;
+}
+button{
+    background-color: plum;
+    width: 75px;
+    height: 30px;
+    border-radius: 5px;
+    font-weight: 500;
+    border: none;
+    position: absolute;
+    bottom: 13%;
+    left: 19px;
+    
+}
+button a{
+    text-decoration: none;
+    color: #3a0431;
+}
+button:hover{
+    background-color: #890f89;
+    color: #d592d5;
+}
+button a:hover{
+    color: #f5f5f5;
+}
+
